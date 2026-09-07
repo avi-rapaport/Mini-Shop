@@ -113,6 +113,9 @@ body {
 
 .card-title {
   font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-price {
@@ -133,6 +136,8 @@ body {
 .search-bar {
   padding: 0.7rem;
   max-width: 50%;
+  border: 1.5px solid var(--border-color);
+  border-radius: 5px;
 }
 
 .toglle-ui {
@@ -184,13 +189,6 @@ body {
   gap: 1rem;
 }
 
-.details-sub-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
 .details-category {
   border: 1px solid var(--border-color);
   width: fit-content;
@@ -230,6 +228,17 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 10px;
   color: var(--text-primary);
+}
+
+.fav-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.fav-headline {
+  border-bottom: 1.5px solid var(--border-color);
 }
 
 .fav-list {
@@ -273,6 +282,10 @@ body {
   border-radius: 10px;
 }
 
+.fav-image {
+  max-width: 95%;
+}
+
 .fav-btn {
   border: 1px solid var(--border-color);
   background-color: var(--bg-primary);
@@ -281,8 +294,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--text-primary);
+}
+
+.fav-title {
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .fav-price {
   color: teal;
+}
+
+.empty-message {
+  display: flex;
+  justify-self: center;
 }

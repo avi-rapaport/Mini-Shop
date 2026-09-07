@@ -6,6 +6,7 @@ const Header = () => {
   const favoritesAmount = useFavoritesStore((state) => state.favorites).length;
   const location = useLocation();
   const isFavorites = location.pathname.includes('favorites');
+
   return (
     <div className="header">
       🛍️ Mini Shop

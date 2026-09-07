@@ -24,11 +24,11 @@ const ProductDetails = ({ product }: ProductCardProps) => {
       </div>
       <div className="details-info">
         <h1>{product.title}</h1>
-        <div className="details-sub-info">
-          <h4 className="details-category">🏷️ {product.category}</h4>
-          <h1 className="details-price">${product.price}</h1>
-          <p className="details-desc">{product.description}</p>
-        </div>
+
+        <h4 className="details-category">🏷️ {product.category}</h4>
+        <h1 className="details-price">${product.price}</h1>
+        <p className="details-desc">{product.description}</p>
+
         <div className="details-buttons">
           <button
             onClick={handleToggleFavorite}

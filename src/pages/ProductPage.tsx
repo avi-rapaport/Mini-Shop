@@ -11,7 +11,7 @@ const ProductPage = () => {
 
   if (loading) return <h1>Loading products...</h1>;
   if (error) return <h1>Error: {error}</h1>;
-  if (!product) return <h1>Product not found!</h1>;
+  if (!product) return <h1 className="empty-message">Product not found!</h1>;
 
   return <ProductDetails product={product} />;
 };
