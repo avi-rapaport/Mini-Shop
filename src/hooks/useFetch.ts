@@ -25,13 +25,13 @@ function useFetch<T>(url: string) {
 
         if (isMounted) {
           setData(result);
+          setLoading(false);
         }
       } catch (err) {
         if (isMounted) {
           setError(err instanceof Error ? err.message : 'An error occurred');
+          setLoading(false);
         }
-      } finally {
-        setLoading(false);
       }
     };
 
