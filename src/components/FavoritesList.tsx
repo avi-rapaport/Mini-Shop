@@ -2,6 +2,7 @@ import { Trash } from 'lucide-react';
 import { useFavoritesStore } from '../store/favoritesStore';
 import type { FavoritesListProps } from '../types/product';
 import { useNavigate } from 'react-router-dom';
+import { memo } from 'react';
 
 const FavoritesList = ({ products }: FavoritesListProps) => {
   const removeFavorites = useFavoritesStore((state) => state.removeFavorite);
@@ -36,4 +37,4 @@ const FavoritesList = ({ products }: FavoritesListProps) => {
   );
 };
 
-export default FavoritesList;
+export default memo(FavoritesList);
