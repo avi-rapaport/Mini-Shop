@@ -33,6 +33,7 @@ body {
   justify-content: space-between;
   border-bottom: 0.5px solid black;
   padding: 1rem;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -42,13 +43,17 @@ body {
 
 .nav-active {
   text-decoration: none;
-  color: turquoise;
-  border-bottom: 1px solid turquoise;
+  color: teal;
+  border-bottom: 1px solid teal;
 }
 
 .nav-item {
   text-decoration: none;
   color: var(--text-primary);
+}
+
+.fav-amount {
+  margin-left: -0.8rem;
 }
 
 .home-page {
@@ -111,7 +116,7 @@ body {
 }
 
 .card-price {
-  color: turquoise;
+  color: teal;
   font-weight: bold;
 }
 
@@ -136,7 +141,7 @@ body {
 }
 
 .toggle-wrapper {
-  background-color: turquoise;
+  background-color: gray;
   border-radius: 10px;
   width: 35px;
   padding: 0 2px;
@@ -144,9 +149,140 @@ body {
 }
 
 .toggle-wrapper.active {
-  background-color: #333;
+  background-color: teal;
 }
 
 .toggle-wrapper.active .toggle-inner {
   transform: translateX(15px);
+}
+
+.details-page {
+  display: flex;
+  gap: 1rem;
+  padding: 5rem 1rem;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgb(223, 217, 217);
+  border-radius: 10px;
+  width: 50%;
+  position: relative;
+}
+
+.details-image {
+  max-width: 95%;
+}
+
+.details-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.details-sub-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.details-category {
+  border: 1px solid var(--border-color);
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: teal;
+}
+
+.details-price {
+  color: teal;
+}
+
+.details-desc {
+  line-height: 1.6rem;
+}
+
+.details-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.details-btn {
+  padding: 1rem;
+  width: 45%;
+}
+
+.add-btn {
+  background-color: teal;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--text-primary);
+}
+
+.back-btn {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--text-primary);
+}
+
+.fav-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+  gap: 1.5rem;
+}
+
+.fav-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  height: 100%;
+}
+
+.fav-heart {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 1.2rem;
+  line-height: 1;
+  z-index: 1;
+}
+
+.fav-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgb(223, 217, 217);
+  border-radius: 10px;
+}
+
+.fav-btn {
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-primary);
+  border-radius: 10px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fav-price {
+  color: teal;
 }

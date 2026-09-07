@@ -12,6 +12,7 @@ const SearchBar = ({ ref }: inputRef) => {
   return (
     <input
       className="search-bar"
+      name="search"
       type="text"
       value={searchQuery}
       onChange={(e) => setSearchQuery(e.target.value)}

@@ -10,3 +10,7 @@ export interface Product {
 export interface ProductCardProps {
   product: Product;
 }
+
+export interface FavoritesListProps {
+  products: Product[];
+}
